@@ -1,0 +1,44 @@
+{
+  "transforms_requested": [
+    "missing_value_imputation",
+    "categorical_encoding",
+    "numeric_scaling",
+    "interaction_terms",
+    "aggregated_features"
+  ],
+  "transforms_applied": [
+    "missing_value_imputation",
+    "interaction_terms",
+    "aggregated_features",
+    "categorical_encoding",
+    "numeric_scaling"
+  ],
+  "transforms_skipped": [],
+  "shape_before": [
+    48842,
+    14
+  ],
+  "shape_after": [
+    48842,
+    36
+  ],
+  "n_features_added": 22,
+  "change_log": [
+    "workclass: filled 2799 missing values with 'missing' category",
+    "occupation: filled 2809 missing values with 'missing' category",
+    "native_country: filled 857 missing values with 'missing' category",
+    "created age_x_education interaction term",
+    "created net_capital (capital_gain - capital_loss)",
+    "created hours_per_age ratio feature",
+    "workclass: one-hot encoded (9 categories)",
+    "education: label encoded (16 categories, too many for one-hot)",
+    "marital_status: one-hot encoded (7 categories)",
+    "occupation: label encoded (15 categories, too many for one-hot)",
+    "relationship: one-hot encoded (6 categories)",
+    "race: one-hot encoded (5 categories)",
+    "sex: one-hot encoded (2 categories)",
+    "native_country: label encoded (42 categories, too many for one-hot)",
+    "scaled 12 numeric columns with StandardScaler: ['age', 'fnlwgt', 'education', 'education_num', 'occupation', 'capital_gain', 'capital_loss', 'hours_per_week', 'native_country', 'age_x_education', 'net_capital', 'hours_per_age']"
+  ],
+  "output_path": "outputs\\pass_3\\engineered_features.csv"
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "model": "lightgbm",
+    "status": "ok",
+    "baseline_score": 0.9295867941994108,
+    "tuned_score": 0.92844601072079,
+    "improvement": -0.0011407834786207882,
+    "beat_baseline": false,
+    "best_params": {
+      "learning_rate": 0.11861663446573512,
+      "n_estimators": 142,
+      "num_leaves": 29,
+      "subsample": 0.892797576724562
+    }
+  },
+  {
+    "model": "xgboost",
+    "status": "ok",
+    "baseline_score": 0.92492340763795,
+    "tuned_score": 0.9283520593154525,
+    "improvement": 0.0034286516775025033,
+    "beat_baseline": true,
+    "best_params": {
+      "colsample_bytree": 0.6571467271687763,
+      "learning_rate": 0.19875765715516733,
+      "max_depth": 6,
+      "n_estimators": 51,
+      "subsample": 0.8887995089067299
+    }
+  },
+  {
+    "model": "gradient_boosting",
+    "status": "ok",
+    "baseline_score": 0.9221853739393708,
+    "tuned_score": 0.9270364898704768,
+    "improvement": 0.004851115931105987,
+    "beat_baseline": true,
+    "best_params": {
+      "learning_rate": 0.28218028561456754,
+      "max_depth": 3,
+      "n_estimators": 113,
+      "subsample": 0.996884623716487
+    }
+  }
+]

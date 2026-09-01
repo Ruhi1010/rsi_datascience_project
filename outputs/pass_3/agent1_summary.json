@@ -1,0 +1,21 @@
+{
+  "scoring_metric": "roc_auc",
+  "cv_folds": 5,
+  "n_models_attempted": 12,
+  "n_models_succeeded": 12,
+  "top_models": [
+    "lightgbm",
+    "hist_gradient_boosting",
+    "xgboost",
+    "gradient_boosting",
+    "random_forest"
+  ],
+  "unstable_models": [],
+  "overfitting_models": [
+    "random_forest",
+    "extra_trees",
+    "decision_tree"
+  ],
+  "best_model": "lightgbm",
+  "best_score": 0.9284149187463304
+}

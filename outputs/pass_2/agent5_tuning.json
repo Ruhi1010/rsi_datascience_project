@@ -1,0 +1,30 @@
+[
+  {
+    "model": "lightgbm",
+    "status": "ok",
+    "baseline_score": 0.9284149187463304,
+    "tuned_score": 0.927570621848703,
+    "improvement": -0.000844296897627439,
+    "beat_baseline": false,
+    "best_params": {
+      "learning_rate": 0.11861663446573512,
+      "n_estimators": 142,
+      "num_leaves": 29,
+      "subsample": 0.892797576724562
+    }
+  },
+  {
+    "model": "hist_gradient_boosting",
+    "status": "ok",
+    "baseline_score": 0.9282046946346127,
+    "tuned_score": 0.9280384717745772,
+    "improvement": -0.00016622286003553643,
+    "beat_baseline": false,
+    "best_params": {
+      "l2_regularization": 0.5142344384136116,
+      "learning_rate": 0.18180022496999232,
+      "max_depth": 5,
+      "max_iter": 100
+    }
+  }
+]

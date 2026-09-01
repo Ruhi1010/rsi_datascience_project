@@ -1,0 +1,30 @@
+{
+  "pass_scoring_metric": "roc_auc",
+  "best_model": "lightgbm",
+  "best_score": 0.9284149187463304,
+  "n_models_evaluated": 12,
+  "n_features_final": 36,
+  "patterns": [
+    "Numeric scaling was applied. Scale-sensitive models (mean roc_auc=0.8903) benefit most from this transform; tree-based models (mean 0.8900) are largely unaffected by scaling.",
+    "Models showing overfitting (large train/test gap): random_forest, extra_trees, decision_tree. These are candidates for regularization or depth limits next pass.",
+    "Feature engineering added 22 new columns (14 -> 36). Best model after engineering: lightgbm at 0.9284.",
+    "Compared to the previous pass, the best score declined by 0.0012 (lightgbm=0.9296 -> lightgbm=0.9284).",
+    "Hyperparameter tuning did not beat the untuned baseline for: lightgbm, hist_gradient_boosting. Default hyperparameters remain in use."
+  ],
+  "recommendations": [
+    "Add regularization or reduce depth for: random_forest, extra_trees, decision_tree"
+  ],
+  "pass_over_pass_comparison": {
+    "prior_best_model": "lightgbm",
+    "prior_best_score": 0.9295867941994108,
+    "current_best_model": "lightgbm",
+    "current_best_score": 0.9284149187463304,
+    "delta": -0.0011718754530803954,
+    "direction": "declined"
+  },
+  "tuning_improved_models": [],
+  "tuning_no_gain_models": [
+    "lightgbm",
+    "hist_gradient_boosting"
+  ]
+}

@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large generated data (keep the folder structure, ignore heavy contents)
+outputs/pass_*/engineered_features.csv
+
+rsi_env

@@ -1,0 +1,43 @@
+dataset:
+  path: data/raw/adult_income.csv
+  target: income
+  positive_class: ">50K"
+  # Note: this project evaluates models using k-fold cross-validation on
+  # the full dataset (see agent1_benchmarking.cv_folds below), not a single
+  # train/test split. There is no separate held-out test set.
+
+pass_number: 1
+
+agent1_benchmarking:
+  # Feedback loop can append to or modify this list between passes
+  model_families:
+    - logistic_regression
+    - decision_tree
+    - random_forest
+    - extra_trees
+    - gradient_boosting
+    - adaboost
+    - xgboost
+    - lightgbm
+    - knn
+    - naive_bayes
+    - svm_linear
+  cv_folds: 5
+  scoring: roc_auc
+  # Populated by the feedback loop from Agent 5's winning hyperparameters
+  tuned_params: {}
+
+agent2_feature_engineering:
+  # Feedback loop appends new transform names here between passes
+  transforms:
+    - missing_value_imputation
+    - categorical_encoding
+    - numeric_scaling
+
+agent5_tuning:
+  n_top_models: 3
+  n_iter: 8
+  cv_folds: 3
+
+agent4_reporting:
+  output_path: outputs

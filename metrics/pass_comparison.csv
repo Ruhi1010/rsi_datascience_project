@@ -1,0 +1,4 @@
+pass_number,best_model,best_score,n_features,n_models_evaluated,overfitting_models,unstable_models,models_tuned,tuning_improvements
+1,lightgbm,0.9295867941994108,33,11,3,1,3,2
+2,lightgbm,0.9284149187463304,36,12,3,0,2,0
+3,lightgbm,0.9284149187463304,36,12,3,0,2,0
